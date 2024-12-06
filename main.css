@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+* body {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100dvh;
+  margin: 0 auto;
+  background-color: #f2ebe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-img {
+  background-image: url("./images/image-product-desktop.jpg");
+  width: 300px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-size: cover;
+}
+
+.card-body {
+  width: 300px;
+  background-color: #fafafa;
+  padding: 2rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.perfume {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  color: #6c7289;
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  color: #1c232b;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #6c7289;
+  margin-bottom: 1.75rem;
+}
+
+.price {
+  color: #6c7289;
+  margin-bottom: 1.75rem;
+}
+.price .bold {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3c8067;
+  margin-right: 1rem;
+}
+.price .line {
+  text-decoration: line-through;
+}
+
+.price, .bold {
+  vertical-align: middle;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem 0;
+  background-color: #3c8067;
+  color: #fafafa;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .container {
+    max-width: 620px;
+    height: auto;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 1.75rem 0;
+  }
+  .card-img {
+    width: 100%;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .perfume {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+  .heading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+  .card-body {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 1.75rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .price {
+    margin-bottom: 1.25rem;
+  }
+  .bold {
+    font-size: 2.75rem;
+    margin-right: 2rem;
+  }
+  .line {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 1.25rem 0;
+    font-size: 1rem;
+  }
+  .price, .bold {
+    vertical-align: middle;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
